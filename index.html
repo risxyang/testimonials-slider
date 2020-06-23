@@ -8,31 +8,146 @@
   
   <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" type="text/css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+   
+    body
+    {
+      font-size: 32px;
+      font-weight: 300;
+      color:  hsl(240, 38%, 20%);
+      font-family: Inter;
+    }
+
+    .quote
+    {
+      width: 80%;
+      padding-bottom: 3%;
+      background-image: url("pattern-quotes.svg");
+      background-repeat: no-repeat;
+      background-position-x: 20%;
+      z-index: 2;
+    }
+
+    .name
+    {
+      font-weight: 700;
+      font-size: 18px;
+      padding-right: 0.5%;
+    }
+
+    .job-title
+    {
+      color: hsl(240, 18%, 77%);
+      font-weight: 500;
+      font-size: 18px;
+
+    }
+
+    .footer-img
+    {
+      width: 100%;
+      position: fixed;
+      bottom: -20%;
+      left: 0%;
+      z-index: -1;
+    }
+
+    #container
+    {
+      width: 85%;
+      height: 80%;
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+      position: relative;
+      background-color: violet;
+
+    }
+
+    .person-container
+    {
+      width: 90%;
+      padding: 3%;
+      background-color: blue;
+    }
+
+    .info
+    {
+      width: 75%;
+      display: inline-block;
+      position: relative;
+      background-color: green;
+    }
+
+    .img-container
+    {
+      position; relative;
+      width: 60%;
+      background-image: url("pattern-bg.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+
+    }
+
+    .person-img
+    {
+      max-width: 75%;
+      height: auto;
+      padding: 8%;
+      z-index: 1;
+    }
+
+    .rounded-img
+    {
+      border-radius: 5px;
+    }
+
+
+   
   </style>
 </head>
-<body>
+<body>  
 
-  “ I’ve been interested in coding for a while but never taken the jump, until now. 
-  I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-  excited about the future. ”
+  <center>
+  <div id="container">
+    <div class="person-container">
+        <div class="img-container">
+          <img class="rounded-img person-img" src="image-tanya.jpg">
+        </div>
+        <div class="info">
+          <div class="quote">
+          “ I’ve been interested in coding for a while but never taken the jump, until now. 
+          I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
+          excited about the future. ”
+          </div>
+          <div style="display: flex; flex-direction: row;">
+            <span class="name">Tanya Sinclair </span>
+            <span class="job-title">UX Engineer</span>
+          </div>
+        </div>
+    </div>
 
-  Tanya Sinclair
-  UX Engineer
+    <div class="person-container">
+      <div class="quote">
+      “ If you want to lay the best foundation possible I’d recommend taking this course. 
+      The depth the instructors go into is incredible. I now feel so confident about 
+      starting up as a professional developer. ”
+      </div>
+      <div style="display: flex; flex-direction: row;">
+        <span class="name">John Tarkpor </span>
+        <span class="job-title">Junior Front-end Developer</span>
+      </div>
+    </div>
 
-  “ If you want to lay the best foundation possible I’d recommend taking this course. 
-  The depth the instructors go into is incredible. I now feel so confident about 
-  starting up as a professional developer. ”
-
-  John Tarkpor
-  Junior Front-end Developer
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">risxyang</a>.
+    </div>
   </div>
+  <img class="footer-img" src="pattern-curve.svg">
+  </center>
 </body>
 </html>
